@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: 'https://bookstore-api-production-30d1.up.railway.app'
+  
 };
 
 /*
