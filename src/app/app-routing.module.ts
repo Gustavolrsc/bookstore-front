@@ -6,6 +6,9 @@ import { CategoriaCreateComponent } from './components/views/categoria/categoria
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { LivroReadAllComponent } from './components/views/livro/livro-read-all/livro-read-all.component';
+import { LivroCreateComponent } from './components/views/livro/livro-create/livro-create.component';
+import { LivroUpdateComponent } from './components/views/livro/livro-update/livro-update.component';
+
 
 const routes: Routes = [
 {
@@ -31,6 +34,14 @@ const routes: Routes = [
 {
   path: 'categorias/:id_cat/livros',
   component: LivroReadAllComponent
+},
+{
+  path: 'categorias/:id_cat/livros/create',
+  component: LivroCreateComponent
+},
+{
+  path: 'categorias/:id_cat/livros/:id/update',
+  component: LivroUpdateComponent
 }
 ];
 
